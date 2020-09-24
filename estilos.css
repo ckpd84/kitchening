@@ -1,1 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
 
+body {
+  background-image: url("./images/bg-body.png");
+}
+
+.main-header {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+header.toggle-nav {
+  display: block;
+  margin: 10px auto;
+}
+
+.toggle-nav img {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.main-header nav ul li,
+.main-footer ul li {
+  text-align: center;
+  list-style-type: none;
+  background-color: black;
+  margin: 2px 0;
+  padding: 5px;
+}
+
+.main-header nav ul li a,
+.main-footer ul li a {
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.banner {
+  display: none;
+}
+
+.photo-container {
+  position: relative;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+}
+
+.special {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+.product {
+  margin-top: 20px;
+}
+
+div.photo-container a.zoom {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.product h2 {
+  margin: 10px 0;
+}
+
+.product p {
+  color: gray;
+}
+
+.more {
+  display: inline-block;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (min-width: 450px) {
+  .main-header nav ul {
+    overflow: hidden;
+  }
+  .main-header nav ul li {
+    float: left;
+    width: 15.25%;
+    margin-right: 1.7%;
+  }
+  .main-header nav ul li a {
+    font-size: 10px;
+  }
+  .main-header nav ul li:last-child {
+    margin-right: 0;
+  }
+  .vip-products {
+    overflow: hidden;
+  }
+  .product {
+    width: 47%;
+    margin-right: 6%;
+    float: left;
+  }
+  .product:nth-child(even) {
+    margin-right: 0;
+  }
+  .banner {
+    display: block;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1180px;
+    margin: 20px auto;
+  }
+
+  .product:nth-child(even) {
+    margin-right: 2%;
+  }
+  .product {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .product:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .main-footer {
+    margin-top: 20px;
+    background-color: red;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px 0;
+  }
+
+  .main-footer ul {
+    width: 75%;
+    margin: 30px auto;
+  }
+
+  .main-footer ul li {
+    display: inline-block;
+    background-color: inherit;
+    border-right: 2px solid white;
+  }
+
+  .main-footer ul li:last-child {
+    display: inline-block;
+    background-color: inherit;
+    border-right: 0px solid white;
+  }
+}
